@@ -1,0 +1,21 @@
+{
+  "default": [],
+  "lint": [
+    "scsslint:all",
+    "jshint:all"
+  ],
+  "dev": [
+    "lint",
+    "sass:development",
+    "uglify:development",
+    "watch"
+  ],
+  "build-staging": [
+    "sass:development",
+    "uglify:development"
+  ],
+  "build-production": [
+    "sass:production",
+    "uglify:production"
+  ]
+}

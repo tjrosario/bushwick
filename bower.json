@@ -1,0 +1,8 @@
+{
+  "name": "bushwick",
+  "version": "1.0.0",
+  "devDependencies": {
+    "bourbon": "3.2.1",
+    "neat": "~1.7.1"
+  }
+}
