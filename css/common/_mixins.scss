@@ -1,0 +1,120 @@
+/*----------------------------------------------------------
+Mixins
+----------------------------------------------------------*/
+
+// fonts
+@mixin open-sans-light () {
+  font-family: $open-sans;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin open-sans-light-italic () {
+  font-family: $open-sans;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@mixin open-sans () {
+  font-family: $open-sans;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin open-sans-italic () {
+  font-family: $open-sans;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin open-sans-semibold () {
+  font-family: $open-sans;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin open-sans-semibold-italic () {
+  font-family: $open-sans;
+  font-weight: 600;
+  font-style: italic;
+}
+
+@mixin open-sans-bold () {
+  font-family: $open-sans;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin open-sans-bold-italic () {
+  font-family: $open-sans;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@mixin open-sans-extrabold () {
+  font-family: $open-sans;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@mixin open-sans-extrabold-italic () {
+  font-family: $open-sans;
+  font-weight: 800;
+  font-style: italic;
+}
+
+@mixin clear() {
+  zoom: 1; // For IE 6/7 (trigger hasLayout)
+
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.clear {
+  @include clear();
+}
+
+@mixin reset() {
+  border: 0;
+  float: none;
+  height: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.reset {
+  @include reset();
+}
+
+@mixin fluid-image() {
+  display: block;
+  max-width: 100%;
+  width: auto;
+}
+
+@mixin font-size($fontsize, $percent) {
+  font-size: $fontsize - ($fontsize * $percent);
+}
+
+@mixin headline-lead() {
+  @include open-sans-bold();
+  font-size: 4.0em;
+  margin: 0 0 40px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include media($tablet) {
+    //font-size: 7.3em;
+    @include font-size(7.3em, $fontSizePercent);
+    margin: 0 0 50px;
+  }
+}

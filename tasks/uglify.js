@@ -7,6 +7,9 @@ module.exports = {
     },
     files: {
       "dist/js/vendor.js": [
+        "bower_components/jquery/dist/jquery.js",
+        "js/vendor/jquery.easing.js",
+        "js/vendor/slick.js"
       ],
       "dist/js/app.js": [
         "js/app.js"
@@ -21,6 +24,9 @@ module.exports = {
     },
     files: {
       "dist/js/vendor.js": [
+        "bower_components/jquery/dist/jquery.js",
+        "js/vendor/jquery.easing.js",
+        "js/vendor/slick.js"
       ],
       "dist/js/app.js": [
         "js/app.js"

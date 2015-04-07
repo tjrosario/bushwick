@@ -1,8 +1,29 @@
-//breakpoints
-$desktop-breakpoint: 1024px;
-$tablet-breakpoint: 768px;
-$mobile-breakpoint: 568px;
+/*----------------------------------------------------------
+Variables
+----------------------------------------------------------*/
 
-$mobile: new-breakpoint(max-width $mobile-breakpoint 6);
-$tablet: new-breakpoint(max-width $tablet-breakpoint 12);
+//breakpoints
+$max-width: em(1128);
+$desktop-breakpoint: 1128px;
+$tablet-breakpoint: 768px;
+
+$mobile: new-breakpoint(max-width $tablet-breakpoint 4);
+$tablet: new-breakpoint(min-width $tablet-breakpoint 12);
 $desktop: new-breakpoint(min-width $desktop-breakpoint 12);
+
+$open-sans: 'Open Sans', sans-serif;
+
+/*
+  Colors
+*/
+
+$white: #ffffff;
+$black: #212121;
+$black-alt: #333333;
+$gray: #bdbdbd;
+
+
+$padded: 38px;
+$gutter: 24px;
+
+$fontSizePercent: .2;

@@ -4,6 +4,7 @@ module.exports = {
     jshintrc: "tasks/config/.jshintrc"
   },
   all: [
-    "js/**/*.js"
+    "js/**/*.js",
+    "!js/vendor/**/*.js"
   ]
 };

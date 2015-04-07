@@ -5,16 +5,19 @@
     "jshint:all"
   ],
   "dev": [
+    "copy:images",
     "lint",
     "sass:development",
     "uglify:development",
     "watch"
   ],
   "build-staging": [
+    "copy:images",
     "sass:development",
     "uglify:development"
   ],
   "build-production": [
+    "copy:images",
     "sass:production",
     "uglify:production"
   ]
