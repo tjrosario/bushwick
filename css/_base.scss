@@ -231,7 +231,6 @@ p {
   color: $white;
   height: auto;
   position: relative;
-  text-align: center;
 
   @include media($tablet) {
     display: block;
@@ -254,7 +253,7 @@ p {
 
   p {
     display: none;
-    padding: 0 $gutter;
+    padding: 0 $gutter + 5;
 
     @include media($tablet) {
       display: block;
@@ -291,8 +290,9 @@ p {
 
     .wrapper {
       @include media($tablet) {
-        display: table-cell;
+        //display: table-cell;
         height: 358px;
+        padding: 0;
         vertical-align: middle;
       }
     }
@@ -307,7 +307,7 @@ p {
 
       @include media($tablet) {
         color: $white;
-        @include font-size(7.3em, $fontSizePercent);
+        @include font-size(6.0em, $fontSizePercent);
       }
     }
   }
@@ -354,7 +354,7 @@ p {
   }
 }
 
-#meatheads {
+#menu {
   h2 {
     @include headline-lead();
   }
@@ -371,17 +371,17 @@ p {
   }
 
   .lead {
-    margin-top: -25px;
+    margin-top: -15px;
 
     p {
       @include open-sans-light();
       font-size: 2.0em;
       letter-spacing: 0.02em;
-      line-height: 1.2;
+      line-height: 1.4;
       margin-top: 0;
 
       @include media($tablet) {
-        @include font-size(4em, $fontSizePercent);
+        //@include font-size(4em, $fontSizePercent);
         margin: 0 0 40px;
       }
     }
@@ -448,7 +448,7 @@ p {
           margin-top: 20px;
 
           @include media($tablet) {
-            font-size: 2.7em;
+            //font-size: 2.7em;
             margin-top: 54px;
           }
         }
